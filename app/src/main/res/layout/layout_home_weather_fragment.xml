@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
     android:paddingHorizontal="@dimen/fragment_horizontal_padding"
-    android:paddingBottom="@dimen/fragment_bottom_padding"
-    android:background="@color/colorPrimaryDark">
+    android:paddingBottom="@dimen/fragment_bottom_padding">
 
     <TextView
         android:id="@+id/homeWeatherCurrentTemperature"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:theme="@style/HomeWeatherTitle"
         app:layout_constraintBottom_toTopOf="@id/homeWeatherDays"
         app:layout_constraintEnd_toEndOf="parent"
-        android:theme="@style/HomeWeatherTitle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="18°C" />
@@ -23,8 +23,8 @@
         android:id="@+id/homeWeatherCurrentWeather"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
         android:theme="@style/HomeWeatherSubTitle"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/homeWeatherCurrentTemperature"
         tools:text="Rain" />

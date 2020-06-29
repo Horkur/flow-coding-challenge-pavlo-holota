@@ -4,13 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="@dimen/recyclerview_item_height"
-    android:clickable="true"
-    android:focusable="true"
     tools:background="@drawable/recycler_item_background_rounded_up">
 
     <TextView
         android:id="@+id/citySelectItemCity"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="match_parent"
         android:gravity="center"
         android:theme="@style/RecyclerTitle"

@@ -25,8 +25,8 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:gravity="center"
-        android:theme="@style/CitySelectSuggestionSubTitle"
         android:textColor="@android:color/black"
+        android:theme="@style/CitySelectSuggestionSubTitle"
         app:layout_constraintHeight_default="percent"
         app:layout_constraintHeight_percent="0.4"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,7 +36,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:background="@android:color/black"/>
+        android:background="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -30,14 +30,15 @@ class CitySelectAdapter(
 
     override fun onBindViewHolder(holder: CitySelectViewHolder, position: Int) {
         with(citiesList[position]) {
-            holder.cityName.text = context.resources.getString(
-                R.string.city_select_saved_city,
-                this.city,
-                this.country
-            )
 
-            holder.itemView.setOnClickListener {
-                onClickListener(this)
+            holder.cityName.let {
+                it.text = context.resources.getString(
+                    R.string.city_select_saved_city,
+                    this.city,
+                    this.country
+                )
+
+                it.setOnClickListener { onClickListener(this) }
             }
 
             holder.removeIcon.setOnClickListener {

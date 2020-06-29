@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
-    android:paddingTop="?attr/actionBarSize"
     android:paddingHorizontal="@dimen/fragment_horizontal_padding"
+    android:paddingTop="?attr/actionBarSize"
     android:paddingBottom="@dimen/fragment_bottom_padding">
 
     <TextView
@@ -48,9 +48,9 @@
         android:id="@+id/citySelectSuggestions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:visibility="gone"
         android:elevation="1dp"
         android:scrollbars="vertical"
+        android:visibility="gone"
         app:layout_constraintTop_toBottomOf="@id/citySelectSearchBox"
         tools:visibility="visible" />
 
