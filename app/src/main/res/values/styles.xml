@@ -1,0 +1,81 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:navigationBarColor">@color/navigationBarColor</item>
+    </style>
+
+    <!-- Toolbar Title -->
+    <style name="ToolbarTitle">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/toolbar_title_size</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <!-- City Select SearchBox -->
+    <style name="CitySelectEditTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@drawable/city_select_box_stroke_color</item>
+        <item name="boxCollapsedPaddingTop">@dimen/city_select_textinput_box_padding_top</item>
+        <item name="android:textColor">@color/gray80</item>
+        <item name="boxStrokeWidthFocused">@dimen/city_select_textinput_box_stroke</item>
+        <item name="hintTextColor">@color/colorPrimaryLight</item>
+        <item name="hintTextAppearance">@style/CitySelectTextFloatLabelAppearance</item>
+    </style>
+
+    <!-- Text Styles -->
+    <style name="HomeWeatherTitle" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/home_weather_title_size</item>
+        <item name="android:textColor">@color/titleYellow</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="HomeWeatherSubTitle" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/home_weather_subtitle_size</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/titleYellow</item>
+        <item name="android:letterSpacing">1.5</item>
+    </style>
+
+    <style name="RecyclerTitle" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/recycler_title</item>
+        <item name="android:inputType">textNoSuggestions</item>
+        <item name="android:capitalize">sentences</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="RecyclerSubTitle" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/recycler_subtitle</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="CitySelectTitle" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/city_select_title</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="CitySelectEditText" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/city_select_edittext_size</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="CitySelectTextFloatLabelAppearance" parent="TextAppearance.Design.Hint">
+        <item name="android:textColor">@color/gray20</item>
+        <item name="android:textSize">@dimen/city_select_label_size</item>
+    </style>
+
+    <style name="CitySelectSuggestionTitle" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/city_select_suggestion_title</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="CitySelectSuggestionSubTitle" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/city_select_suggestion_subtitle</item>
+        <item name="android:singleLine">true</item>
+    </style>
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/recyclerview_item_height"
+    tools:background="@drawable/recycler_item_background_rounded_up">
+
+    <TextView
+        android:id="@+id/homeWeatherItemDay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:theme="@style/RecyclerTitle"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.4"
+        tools:text="Today" />
+
+    <TextView
+        android:id="@+id/homeWeatherItemDate"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:theme="@style/RecyclerSubTitle"
+        app:layout_constraintEnd_toEndOf="@id/homeWeatherItemDay"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/homeWeatherItemDay"
+        tools:text="20/06" />
+
+    <ImageView
+        android:id="@+id/homeWeatherItemPicture"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="@dimen/home_weather_item_icon_vertical_margin"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toEndOf="@id/homeWeatherItemDay"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.2"
+        tools:src="@drawable/ic_rain" />
+
+    <TextView
+        android:id="@+id/homeWeatherItemMaxTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:paddingHorizontal="@dimen/home_weather_item_minmax_title_padding"
+        android:text="@string/home_weather_item_max_title"
+        android:theme="@style/RecyclerSubTitle"
+        app:layout_constraintBottom_toTopOf="@id/homeWeatherItemMinTitle"
+        app:layout_constraintEnd_toStartOf="@id/homeWeatherItemMaxValue"
+        app:layout_constraintStart_toEndOf="@id/homeWeatherItemPicture"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/homeWeatherItemMaxValue"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:theme="@style/RecyclerTitle"
+        app:layout_constraintBottom_toTopOf="@id/homeWeatherItemMinTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/homeWeatherItemMaxTitle"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="18°C" />
+
+    <TextView
+        android:id="@+id/homeWeatherItemMinValue"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:theme="@style/RecyclerTitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/homeWeatherItemMinTitle"
+        app:layout_constraintStart_toEndOf="@id/homeWeatherItemPicture"
+        app:layout_constraintTop_toBottomOf="@id/homeWeatherItemMaxTitle"
+        tools:text="14°C" />
+
+    <TextView
+        android:id="@+id/homeWeatherItemMinTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:paddingHorizontal="@dimen/home_weather_item_minmax_title_padding"
+        android:text="@string/home_weather_item_min_title"
+        android:theme="@style/RecyclerSubTitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/homeWeatherItemMinValue"
+        app:layout_constraintTop_toBottomOf="@id/homeWeatherItemMaxTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

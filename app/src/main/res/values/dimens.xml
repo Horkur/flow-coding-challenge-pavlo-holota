@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="toolbar_elevation">0dp</dimen>
+    <dimen name="toolbar_icon_margin">10dp</dimen>
+    <dimen name="toolbar_title_max_width">280dp</dimen>
+
+    <dimen name="fragment_horizontal_padding">32dp</dimen>
+    <dimen name="fragment_bottom_padding">48dp</dimen>
+    <dimen name="recyclerview_item_height">56dp</dimen>
+
+    <dimen name="home_weather_item_minmax_title_padding">8dp</dimen>
+    <dimen name="home_weather_item_icon_vertical_margin">8dp</dimen>
+
+    <dimen name="city_select_textinput_vertical_padding">18dp</dimen>
+    <dimen name="city_select_textinput_height">80dp</dimen>
+    <dimen name="city_select_textinput_box_padding_top">12dp</dimen>
+    <dimen name="city_select_textinput_box_stroke">1dp</dimen>
+
+    <dimen name="city_select_item_delete">36dp</dimen>
+    <dimen name="city_select_item_delete_margin_end">20dp</dimen>
+
+    <dimen name="city_suggestion_item_horizontal_padding">16dp</dimen>
+
+    <!-- Text sizes -->
+    <dimen name="toolbar_title_size">24sp</dimen>
+
+    <dimen name="home_weather_title_size">40sp</dimen>
+    <dimen name="home_weather_subtitle_size">16sp</dimen>
+
+    <dimen name="recycler_title">16sp</dimen>
+    <dimen name="recycler_subtitle">14sp</dimen>
+
+    <dimen name="city_select_title">36sp</dimen>
+    <dimen name="city_select_suggestion_title">18sp</dimen>
+    <dimen name="city_select_suggestion_subtitle">14sp</dimen>
+    <dimen name="city_select_label_size">14sp</dimen>
+    <dimen name="city_select_edittext_size">16sp</dimen>
+
+</resources>

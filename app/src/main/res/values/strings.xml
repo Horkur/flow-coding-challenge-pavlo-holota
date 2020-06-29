@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">World Wide Weather</string>
+
+    <string name="toolbar_title_error">Unknown Location</string>
+
+    <string name="home_weather_item_min_title">Min.</string>
+    <string name="home_weather_item_min_value">%s°C</string>
+    <string name="home_weather_item_max_title">Max.</string>
+    <string name="home_weather_item_max_value">%s°C</string>
+
+    <string name="city_select_title">Add another city</string>
+    <string name="city_select_searchbox_hint">City</string>
+    <string name="city_select_searchbox_done">Done</string>
+    <string name="city_select_saved_city">%s, %s</string>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/recyclerview_item_height"
+    android:clickable="true"
+    android:focusable="true"
+    tools:background="@drawable/recycler_item_background_rounded_up">
+
+    <TextView
+        android:id="@+id/citySelectItemCity"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:theme="@style/RecyclerTitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/citySelectItemDelete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Buenos Aires" />
+
+    <ImageView
+        android:id="@+id/citySelectItemDelete"
+        android:layout_width="@dimen/city_select_item_delete"
+        android:layout_height="@dimen/city_select_item_delete"
+        android:layout_marginEnd="@dimen/city_select_item_delete_margin_end"
+        android:src="@drawable/ic_cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

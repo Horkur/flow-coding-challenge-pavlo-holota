@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/weather_navigation"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.android.worldwideweather.presentation.ui.flow.splash.SplashFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/layout_spash_fragment">
+        <action
+            android:id="@+id/action_splashFragment_to_homeWeatherFragment"
+            app:destination="@id/homeWeatherFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeWeatherFragment"
+        android:name="com.android.worldwideweather.presentation.ui.flow.home.HomeWeatherFragment"
+        android:label="HomeWeatherFragment"
+        tools:layout="@layout/layout_home_weather_fragment">
+        <action
+            android:id="@+id/action_homeWeatherFragment_to_citySelectFragment"
+            app:destination="@id/citySelectFragment"
+            app:enterAnim="@anim/anim_fragment_slide_enter"
+            app:exitAnim="@anim/anim_fragment_slide_exit"
+            app:popEnterAnim="@anim/anim_fragment_slide_pop_enter"
+            app:popExitAnim="@anim/anim_fragment_slide_pop_exit" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/citySelectFragment"
+        android:name="com.android.worldwideweather.presentation.ui.flow.cityselect.CitySelectFragment"
+        android:label="CitySelectFragment"
+        tools:layout="@layout/layout_city_select_fragment" />
+
+</navigation>
